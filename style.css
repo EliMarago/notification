@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+  background-color: #f656c188;
+  font-family: "Schibsted Grotesk", sans-serif;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(3) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%23d5d2d2ff'/><path d='M10 4.124L4.155 9.987-4.124 10l-5.863-5.845L-10-4.124l5.845-5.863L4.124-10l5.863 5.845zm40 40l-5.845 5.863-8.279.013-5.863-5.845L30 35.876l5.845-5.863L44.124 30l5.863 5.845zm-40 0l-5.845 5.863-8.279.013-5.863-5.845-.013-8.279 5.845-5.863L4.124 30l5.863 5.845zm40-40l-5.845 5.863-8.279.013-5.863-5.845L30-4.124l5.845-5.863L44.124-10l5.863 5.845z'  stroke-linecap='square' stroke-width='1.5' stroke='%23f656c188' fill='none'/><path d='M30 24.124l-5.845 5.863-8.279.013-5.863-5.845L10 15.876l5.845-5.863L24.124 10l5.863 5.845z'  stroke-linecap='square' stroke-width='1.5' stroke='%23029719ff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+}
+.btn {
+  font-family: "Schibsted Grotesk", sans-serif;
+  color: #029618;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  padding: 30px;
+  background-color: rgb(41, 41, 41);
+  font-size: 17px;
+  border: solid 3px #fff;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+#toasts {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.toast {
+  background-color: aliceblue;
+  color: #029618;
+  border-radius: 8px;
+  padding: 1.8rem 3rem;
+  margin: 0.5rem;
+  background-color: rgb(233, 233, 233);
+  border: solid 1px;
+}
+.toast.info {
+  color: #028515;
+}
+.toast.success {
+  color: #7f08a0;
+}
+.toast.error {
+  color: #962202;
+}
